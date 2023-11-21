@@ -1,0 +1,5 @@
+npm create vite -> para iniciar el proyecto
+cd client
+npm install -> instalas las dependencias del proyecto
+nmp run dev -> inicar el proyecto
+npm i react-router-dom react-hot-toast axios react-hook-form

@@ -1,56 +1,154 @@
 .messagesBox {
   height: 90vh;
-  background-color: red;
-  padding:10;
+  background-color: #011f4b;
+  padding:0;
   /* height: 300px; */
 	width: 100%;
-	border: 1px solid #ddd;
 	overflow-y: scroll;
 }
 
 .inputMessageBox{
   height: 10vh;
-  background-color: blue;
-  padding:10;
+  background-color: #011f4b;
+  padding:0;
 }
 
 #mensajes {
-    height: auto;
-  }
-  .hearText{
-    padding:20px;
-    background:#fff;
-  	width: 10%;
-    margin-left: auto; 
-    margin-right: 0;  
-    border-radius: 25px;
-    border: 4px solid #73AD21;
-    margin-bottom: 25px;
+  height: auto;
+}
+
+.hearText{
+  padding:20px;
+  background:#b3cde0;
+  width: min-content;
+  width: 20%;
+  margin-left: auto; 
+  margin-right: 0;  
+  border-radius: 25px;
+  border: 4px solid #005b96;
+  margin-bottom: 25px;
+  font-size:24px;
+
+}
+
+.deafText{
+  padding:20px;
+  background:#6497b1;
+  width: min-content;
+  width: 20%;
+  margin-left: 0; 
+  margin-right: auto;  
+  border-radius: 25px;
+  border: 4px solid #005b96;
+  margin-bottom: 25px;
+  font-size:24px;
+
+}
+
+.inputText{
+  /* padding:20px;
+  background:#6497b1;
+  width: min-content; */
+  width: 70%;
+  height: 90%;
+  font-size:24px;
+  border-radius: 25px;
+  /* margin-left: 0; 
+  margin-right: auto;  
+  border-radius: 25px;
+  border: 4px solid #005b96;
+  margin-bottom: 25px; */
 }
 
 
-
-button {
-  /* -webkit-appearance: button;
-  -webkit-writing-mode: horizontal-tb !important;
-  text-rendering: auto;
-  color: buttontext; */
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
+/* General button style */
+.btn {
+  border: none;
+  font-family: 'Lato';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
   display: inline-block;
-  text-align: center;
-  align-items: flex-start;
-  cursor: default;
-  background-color: buttonface;
-  box-sizing: border-box;
-  margin: 0em;
-  font: 400 11px system-ui;
-  padding: 1px 7px 2px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
-  border-image: initial;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Icon separator */
+.btn-sep {
+  padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before {
+  background: rgba(0,0,0,0.15);
+}
+
+
+/* Button 3 */
+.btn-4 {
+  background: #34495e;
+  color: #fff;
+}
+
+.btn-4:hover {
+  background: #2c3e50;
+}
+
+.btn-4:active {
+  background: #2c3e50;
+  top: 2px;
+}
+
+.btn-4:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+
+}
+
+/* Icons */
+
+.icon-send:before {
+  /* content: "pa"; */
+  content:url('paper-plane_20.png');
+  /* background-size: 100px !important;
+  visibility: visible;
+  width: 10px; 
+  height: 20px; */
+  /* background: #F8E6AE url(paper-plane.png) no-repeat 0px 0px; */
 }
