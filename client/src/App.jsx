@@ -4,6 +4,8 @@
 import './App.css';
 import { useEffect, useState } from "react";
 import { getDeafMessage } from "./api/recive_message_api";
+import { setDeafMessage } from "./api/send_message_api";
+
 
 
 var index = 0;
@@ -13,9 +15,11 @@ const addAMessage = (e) => {
   if(document.getElementById("hearMessage").value != ""){
     const element = document.createElement('div');
     element.textContent = document.getElementById("hearMessage").value;
+    setDeafMessage(document.getElementById("hearMessage").value);
     element.className = 'hearText';
     document.getElementById('mensajes').appendChild(element)
     document.getElementById("hearMessage").value = "";
+
   }
   
 }
